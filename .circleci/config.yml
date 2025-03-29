@@ -7,6 +7,7 @@ jobs:
       - image: cimg/openjdk:17.0
     steps:
       - checkout
+      - browser-tools/install-chrome
       - run:
           name: Calculate cache key
           command: |-
